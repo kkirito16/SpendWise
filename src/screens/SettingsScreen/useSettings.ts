@@ -165,20 +165,9 @@ const useSettings = () => {
     console.log('rate on playstore');
   };
 
-  const handleGithub = () => {
-    const githubRepoURL = 'https://github.com/kkirito16/SpendWise';
-    Linking.openURL(githubRepoURL).catch(err =>
-      console.error('Error opening GitHub:', err),
-    );
-  };
+  const handleGithub = () => { };
 
-  const handlePrivacyPolicy = () => {
-    const privacyPolicyURL =
-      'https://github.com/kkirito16/SpendWise/blob/main/PRIVACYPOLICY.md';
-    Linking.openURL(privacyPolicyURL).catch(err =>
-      console.error('Error opening GitHub:', err),
-    );
-  };
+  const handlePrivacyPolicy = () => { };
 
   const handleDeleteAllDataOk = async () => {
     await deleteAllData();
