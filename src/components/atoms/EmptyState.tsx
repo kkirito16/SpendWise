@@ -39,7 +39,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({colors, type, style}) => {
           fontSize: 13,
           marginTop: 5,
         }}>
-        zero {type}
+        No {type}
       </PrimaryText>
     </View>
   );

@@ -13,7 +13,8 @@ const WelcomeScreen = () => {
     <PrimaryView colors={colors} style={{justifyContent: 'space-between'}}>
       <View style={{paddingTop: '15%'}}>
         <PrimaryText style={{fontSize: 24}}>
-          Welcome to <Text style={{color: colors.accentGreen}}>zero</Text>
+          Welcome to{' '}
+          <Text style={{color: colors.accentGreen}}>SpendWise</Text>
         </PrimaryText>
       </View>
 

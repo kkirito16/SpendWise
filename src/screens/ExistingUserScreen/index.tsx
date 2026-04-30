@@ -45,8 +45,11 @@ const ExistingUserScreen = () => {
                 paddingTop: '10%',
               }}>
               Upload your{' '}
-              <Text style={{color: colors.accentGreen}}>zero***.json</Text> file
-              we will assess your data
+              <Text style={{color: colors.accentGreen}}>
+                SpendWise_***.json
+              </Text>{' '}
+              file (zero***.json from older exports also works). We will assess
+              your data
             </PrimaryText>
           </View>
           <View

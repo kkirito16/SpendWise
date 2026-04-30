@@ -92,7 +92,8 @@ const SettingsScreen = () => {
         2,
       );
       console.log(jsonData);
-      const path = `${RNFS.DownloadDirectoryPath}/zero${currentDateAndTime}.json`;
+      const path =
+        `${RNFS.DownloadDirectoryPath}/SpendWise_${currentDateAndTime}.json`;
 
       RNFS.writeFile(path, jsonData, 'utf8')
         .then(success => {
@@ -148,7 +149,7 @@ const SettingsScreen = () => {
               />
             </TouchableOpacity>
           </View>
-          <PrimaryText style={{fontSize: 25}}>zero</PrimaryText>
+          <PrimaryText style={{fontSize: 25}}>SpendWise</PrimaryText>
         </View>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -252,7 +253,7 @@ const SettingsScreen = () => {
               ]}>
               <PrimaryText>Delete all data</PrimaryText>
               <PrimaryText style={{fontSize: 11}}>
-                All data associated with zero will be deleted
+                All data associated with SpendWise will be deleted
               </PrimaryText>
             </View>
           </TouchableOpacity>
@@ -316,7 +317,7 @@ const SettingsScreen = () => {
               ]}>
               <PrimaryText>Privacy Policy</PrimaryText>
               <PrimaryText style={{fontSize: 11}}>
-                Your Data, Your Device: zero Servers, zero Access.
+                Your data stays on your device: no servers, no remote access.
               </PrimaryText>
             </View>
           </TouchableOpacity>
@@ -346,7 +347,7 @@ const SettingsScreen = () => {
             textAlign: 'center',
             marginTop: 15,
           }}>
-          Embrace the simplicity of zero
+          Embrace the simplicity of SpendWise
         </PrimaryText>
         <PrimaryText
           style={{
@@ -436,7 +437,7 @@ const SettingsScreen = () => {
                   ]}
                   value={searchText}
                   onChangeText={handleSearch}
-                  placeholder={'eg. INR'}
+                  placeholder={'eg. USD'}
                   placeholderTextColor={colors.secondaryText}
                 />
               </View>

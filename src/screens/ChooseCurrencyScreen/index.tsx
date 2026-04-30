@@ -59,7 +59,7 @@ const ChooseCurrencyScreen = () => {
           ]}
           value={search}
           onChangeText={handleSearch}
-          placeholder={'eg. INR'}
+          placeholder={'eg. USD'}
           placeholderTextColor={colors.secondaryText}
         />
       </View>
