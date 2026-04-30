@@ -33,13 +33,6 @@ yarn android
 - **JS 注册名 / 显示名**：`SpendWise`（见 `app.json`）
 - **Android applicationId / namespace**：`com.spendwise`
 
-应用内「开源仓库 / 隐私政策」链接已指向：
-
-- 仓库：<https://github.com/kkirito16/SpendWise>
-- 隐私政策：<https://github.com/kkirito16/SpendWise/blob/main/PRIVACYPOLICY.md>
-
-若更换仓库或默认分支名，请同步修改 `src/screens/SettingsScreen/useSettings.ts` 与 `PRIVACYPOLICY.md` 中的联系说明。
-
 ## 常用脚本
 
 | 命令           | 说明                      |
@@ -57,7 +50,3 @@ yarn android
 - `src/services`、`src/schemas`：Realm 与数据模型
 - `assets`：字体、图片与默认 JSON 数据
 - `android`：Android 原生工程
-
-## 许可证与隐私
-
-请参阅仓库根目录的 `PRIVACYPOLICY.md`（应用内「隐私政策」入口应指向你托管该文件的公开 URL）。
