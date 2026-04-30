@@ -287,23 +287,6 @@ const SettingsScreen = () => {
               </PrimaryText>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={handleGithub}>
-            <View
-              style={[
-                styles.individualSettingsContainer,
-                {
-                  borderColor: colors.secondaryText,
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                },
-              ]}>
-              <PrimaryText>Github</PrimaryText>
-              <PrimaryText style={{fontSize: 11}}>
-                Explore the Source Code
-              </PrimaryText>
-            </View>
-          </TouchableOpacity>
           <TouchableOpacity onPress={handlePrivacyPolicy}>
             <View
               style={[
@@ -339,27 +322,6 @@ const SettingsScreen = () => {
             </View>
           </TouchableWithoutFeedback>
         </View>
-        <PrimaryText
-          style={{
-            color: colors.primaryText,
-            fontSize: 12,
-            alignSelf: 'center',
-            textAlign: 'center',
-            marginTop: 15,
-          }}>
-          Embrace the simplicity of SpendWise
-        </PrimaryText>
-        <PrimaryText
-          style={{
-            color: colors.primaryText,
-            fontSize: 12,
-            alignSelf: 'center',
-            textAlign: 'center',
-            marginBottom: '5%',
-          }}>
-          Developed with{' '}
-          <Text style={{color: colors.accentGreen}}>passion</Text> in India.
-        </PrimaryText>
       </ScrollView>
 
       <Modal
