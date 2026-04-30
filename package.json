@@ -1,10 +1,9 @@
 {
-  "name": "Tally",
+  "name": "SpendWise",
   "version": "1.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"

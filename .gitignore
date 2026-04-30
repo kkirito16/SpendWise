@@ -20,7 +20,6 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-ios/.xcode.env.local
 
 # Android/IntelliJ
 #
@@ -56,8 +55,7 @@ yarn-error.log
 # Bundle artifact
 *.jsbundle
 
-# Ruby / CocoaPods
-/ios/Pods/
+# Ruby
 /vendor/bundle/
 
 # Temporary files created by Metro to check the health of the file watcher

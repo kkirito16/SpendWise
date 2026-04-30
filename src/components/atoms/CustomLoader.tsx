@@ -13,7 +13,7 @@ const CustomLoader: React.FC<CustomLoaderProps> = ({colors}) => {
       colors={colors}
       style={{justifyContent: 'center', alignItems: 'center'}}>
       <Image
-        source={require('../../../assets/images/zer0.png')}
+        source={require('../../../assets/images/spendwise.png')}
         style={styles.image}
       />
       <ActivityIndicator color={colors.primaryText} size={90} />

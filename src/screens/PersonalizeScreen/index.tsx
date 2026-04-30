@@ -32,7 +32,7 @@ const PersonalizeScreen = () => {
 
         <View style={styles.subtitleTextContainer}>
           <PrimaryText style={{color: colors.accentGreen, fontSize: 15}}>
-            Hi, It's zer0! What Do Your Friends
+            Hi, it's SpendWise! What do your friends
           </PrimaryText>
           <PrimaryText style={{color: colors.accentGreen, fontSize: 15}}>
             Call You?

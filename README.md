@@ -1,204 +1,63 @@
-<div align="center">
-    <img src="assets/images/tally.png" height="128" alt="Tally Logo">
-    <h1 align="center">Tally - Personal Expense Manager</h1>
-    <p align="center">
-        <em>A privacy-focused, lightweight expense tracking application</em>
-    </p>
-</div>
+# SpendWise
 
-<div align="center">
+SpendWise 是一款基于 **React Native** 的本地个人记账与债务管理应用：日常支出、分类、多币种、报表与借贷记录均保存在设备本地（Realm），不依赖云端账号。
 
-[![React Native](https://img.shields.io/badge/React%20Native-0.72.6-blue.svg)](https://reactnative.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Realm](https://img.shields.io/badge/Realm-12.5.0-purple.svg)](https://realm.io/)
+## 技术栈
 
-</div>
+- React Native 0.72、React 18、TypeScript
+- 导航：React Navigation（Stack + Bottom Tabs）
+- 状态：Redux Toolkit + Redux-Saga
+- 本地数据：Realm
+- 其他：AsyncStorage、Zod 校验、图表（react-native-svg-charts）等
 
----
+## 环境要求
 
-## 📱 About Tally
+- Node.js ≥ 16
+- JDK 17（与 Android Gradle 插件要求一致即可）
+- Android Studio（含 Android SDK、平台工具、模拟器或真机 USB 调试）
 
-**Tally** is a modern, open-source expense management application built with React Native. Designed with privacy at its core, Tally keeps all your financial data locally on your device—no servers, no tracking, no compromises.
+## 安装与运行
 
-Perfect for individuals who want to:
-- 📊 Track daily expenses with ease
-- 💰 Manage debts and loans
-- 📈 Visualize spending patterns
-- 🔒 Keep financial data completely private
-- 🎨 Enjoy a beautiful, minimalist interface
-
-## ✨ Key Features
-
-### 💸 Expense Management
-- **Quick Entry**: Add transactions in seconds with intuitive forms
-- **Custom Categories**: Create and organize expenses your way
-- **Flexible Editing**: Modify or delete any transaction with ease
-- **Multi-Currency**: Support for multiple currency formats
-
-### 📊 Analytics & Insights
-- **Visual Reports**: Beautiful charts and graphs to understand spending patterns
-- **Heat Maps**: See spending trends across months at a glance
-- **Daily Averages**: Track average spending per day
-- **Category Breakdown**: Know exactly where your money goes
-
-### 💳 Debt Tracking
-- **Borrowing & Lending**: Keep track of money owed and loaned
-- **Debtor Management**: Organize multiple debtors with ease
-- **Payment History**: Record all transactions related to debts
-
-### 🎨 User Experience
-- **Dark & Light Themes**: Choose your preferred visual style
-- **Minimal Design**: Clean, distraction-free interface
-- **Smooth Animations**: Delightful interactions throughout
-- **Responsive Layout**: Works perfectly on all screen sizes
-
-### 🔐 Privacy First
-- **100% Local Storage**: All data stays on your device
-- **No Account Required**: No email, no password, no sign-up
-- **Zero Data Collection**: We don't track, store, or share anything
-- **Export/Import**: Full control with JSON backup files
-- **Open Source**: Transparent and auditable codebase
-
-## 📸 Screenshots
-
-<div align="center">
-  <img src="assets/screenshots/zero_home_screen_dark.png" width="250" alt="Home Dark"/>
-  <img src="assets/screenshots/zero_home_screen_light.png" width="250" alt="Home Light"/>
-  <img src="assets/screenshots/zero_report_screen_dark.png" width="250" alt="Reports Dark"/>
-</div>
-
-<div align="center">
-  <img src="assets/screenshots/zero_debts_screen_dark.png" width="250" alt="Debts Dark"/>
-  <img src="assets/screenshots/zero_settings_screen_dark.png" width="250" alt="Settings Dark"/>
-  <img src="assets/screenshots/zero_categories_screen_light.png" width="250" alt="Categories Light"/>
-</div>
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-- **Node.js** (v16 or higher) - [Download](https://nodejs.org/)
-- **Yarn** or **npm** - Package manager
-- **React Native CLI** - `npm install -g react-native-cli`
-- **Android Studio** (for Android) or **Xcode** (for iOS)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/priyanshusaini105/tally.git
-   cd tally
-   ```
-
-2. **Install dependencies**
-   ```bash
-   yarn install
-   # or
-   npm install
-   ```
-
-3. **Install iOS dependencies** (macOS only)
-   ```bash
-   cd ios && pod install && cd ..
-   ```
-
-### Running the App
-
-#### Android
 ```bash
-yarn android
-# or
-npm run android
-```
-
-#### iOS (macOS only)
-```bash
-yarn ios
-# or
-npm run ios
-```
-
-### Development
-
-Start the Metro bundler:
-```bash
+yarn install
+# 终端 1：Metro
 yarn start
-# or
-npm start
+# 终端 2：安装到设备/模拟器
+yarn android
 ```
 
-## 🏗️ Tech Stack
+也可在 **Android Studio** 中打开项目下的 `android` 目录，同步 Gradle 后选择 `app` 运行；首次仍需在项目根目录执行 `yarn start` 以启动 Metro，或在 Run 配置中按需指定 bundler（与团队习惯一致即可）。
 
-- **Frontend**: React Native, TypeScript
-- **State Management**: Redux Toolkit, Redux Saga
-- **Database**: Realm (Local NoSQL)
-- **Navigation**: React Navigation v6
-- **Charts**: react-native-svg-charts
-- **Icons**: React Native Vector Icons
-- **Styling**: StyleSheet API with custom theme system
+## 应用标识
 
-## 📁 Project Structure
+- **JS 注册名 / 显示名**：`SpendWise`（见 `app.json`）
+- **Android applicationId / namespace**：`com.spendwise`
 
-```
-tally/
-├── src/
-│   ├── components/         # Reusable UI components
-│   │   ├── atoms/         # Basic building blocks
-│   │   └── molecules/     # Composite components
-│   ├── screens/           # App screens
-│   ├── navigation/        # Navigation configuration
-│   ├── redux/             # State management
-│   │   ├── slice/        # Redux slices
-│   │   └── saga/         # Side effects
-│   ├── schemas/           # Realm database schemas
-│   ├── hooks/             # Custom React hooks
-│   ├── utils/             # Utility functions
-│   └── styles/            # Global styles and themes
-├── assets/
-│   ├── fonts/            # Custom fonts
-│   ├── images/           # Images and icons
-│   ├── jsons/            # Default data and config
-│   └── screenshots/      # App screenshots
-├── android/              # Android native code
-├── ios/                  # iOS native code
-└── __tests__/           # Test files
-```
+应用内「开源仓库 / 隐私政策」链接已指向：
 
-## 🤝 Contributing
+- 仓库：<https://github.com/kkirito16/SpendWise>
+- 隐私政策：<https://github.com/kkirito16/SpendWise/blob/main/PRIVACYPOLICY.md>
 
-Contributions are welcome! Here's how you can help:
+若更换仓库或默认分支名，请同步修改 `src/screens/SettingsScreen/useSettings.ts` 与 `PRIVACYPOLICY.md` 中的联系说明。
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 常用脚本
 
-Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before contributing.
+| 命令           | 说明                      |
+| -------------- | ------------------------- |
+| `yarn start`   | 启动 Metro 打包服务       |
+| `yarn android` | 构建并安装 Android 调试包 |
+| `yarn test`    | 运行 Jest 测试            |
+| `yarn lint`    | ESLint 检查               |
 
-## 📄 License
+## 目录结构（摘要）
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- `src/screens`：各业务页面
+- `src/components`：原子/分子组件
+- `src/redux`：全局状态与 saga
+- `src/services`、`src/schemas`：Realm 与数据模型
+- `assets`：字体、图片与默认 JSON 数据
+- `android`：Android 原生工程
 
-## 🔒 Privacy Policy
+## 许可证与隐私
 
-Tally takes your privacy seriously. We don't collect any data—period. All your financial information stays on your device. For more details, see our [Privacy Policy](PRIVACYPOLICY.md).
-
-## 🐛 Found a Bug?
-
-If you find a bug or have a feature request, please open an issue on GitHub. We appreciate your feedback!
-
-## 💬 Contact
-
-For questions or suggestions, feel free to reach out:
-- GitHub: [@priyanshusaini105](https://github.com/priyanshusaini105)
-- Repository: [github.com/priyanshusaini105/tally](https://github.com/priyanshusaini105/tally)
-
----
-
-<div align="center">
-    <p>Made with ❤️ for privacy-conscious individuals</p>
-    <p>⭐ Star this repo if you find it useful!</p>
-</div>
+请参阅仓库根目录的 `PRIVACYPOLICY.md`（应用内「隐私政策」入口应指向你托管该文件的公开 URL）。

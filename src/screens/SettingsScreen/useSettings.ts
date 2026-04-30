@@ -166,7 +166,7 @@ const useSettings = () => {
   };
 
   const handleGithub = () => {
-    const githubRepoURL = 'https://github.com/indranilbhuin/zero';
+    const githubRepoURL = 'https://github.com/kkirito16/SpendWise';
     Linking.openURL(githubRepoURL).catch(err =>
       console.error('Error opening GitHub:', err),
     );
@@ -174,7 +174,7 @@ const useSettings = () => {
 
   const handlePrivacyPolicy = () => {
     const privacyPolicyURL =
-      'https://github.com/indranilbhuin/zero/blob/master/PRIVACYPOLICY.md';
+      'https://github.com/kkirito16/SpendWise/blob/main/PRIVACYPOLICY.md';
     Linking.openURL(privacyPolicyURL).catch(err =>
       console.error('Error opening GitHub:', err),
     );

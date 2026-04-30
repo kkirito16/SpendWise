@@ -13,7 +13,7 @@ const SplashScreen = () => {
       <View>
         <PrimaryText
           style={{color: colors.primaryText, fontSize: 90, paddingTop: '20%'}}>
-          zer0
+          SpendWise
         </PrimaryText>
         <PrimaryText style={{color: colors.secondaryText, fontSize: 25}}>
           Count Every
@@ -23,7 +23,7 @@ const SplashScreen = () => {
             color: colors.secondaryText,
             fontSize: 25,
           }}>
-          Penny with zer0
+          Penny with SpendWise
         </PrimaryText>
       </View>
       <View style={{marginBottom: '10%'}}>

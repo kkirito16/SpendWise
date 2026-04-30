@@ -1,10 +1,10 @@
-# Tally - Privacy Policy
+# SpendWise - Privacy Policy
 
-Last updated: December 22, 2023
+Last updated: April 30, 2026
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
-We do not collect any user data. Tally respects your privacy, and we believe that your financial information is personal and should remain private. The application does not track, store, or share any data with external parties.
+We do not collect any user data. SpendWise respects your privacy, and we believe that your financial information is personal and should remain private. The application does not track, store, or share any data with external parties.
 
 ## Interpretation and Definitions
 
@@ -18,11 +18,11 @@ For the purposes of this Privacy Policy:
 
 - __Account__ means a unique account created for You to access the application.
 
-- __Application__ refers to Tally, the expense tracker application provided by Indranil Bhuin.
+- __Application__ refers to SpendWise, the personal finance and expense tracking application.
 
-- __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Tally.
+- __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to SpendWise and its maintainers.
 
-- __Country__ refers to: Karnataka,  India
+- __Country__ refers to: Karnataka, India
 
 - __Device__ means any device that can access the application such as a computer, a cellphone or a digital tablet.
 
@@ -38,25 +38,25 @@ For the purposes of this Privacy Policy:
 
 #### Personal Data
 
-- __No Data Collection__: We do not collect any user data. Tally respects your privacy, and we believe that your financial information is personal and should remain private. The application does not track, store, or share any data with external parties.
+- __No Data Collection__: We do not collect any user data. SpendWise respects your privacy, and we believe that your financial information is personal and should remain private. The application does not track, store, or share any data with external parties.
 
 - __Local Database__: All data generated and entered by the user is stored exclusively in the local database on their device. This enhances privacy by ensuring that sensitive information is kept within the user's control.
 
-- __Open Source__: Tally is an open-source application, promoting transparency and collaboration. Users can access the source code, contributing to the ongoing improvement and security of the application.
+- __Open Source__: SpendWise is an open-source application, promoting transparency and collaboration. Users can access the source code, contributing to the ongoing improvement and security of the application.
 
 ### Delete Your Personal Data
 
- You have the right to manage your data. Tally allows users to delete or download their app data directly from the application, providing a transparent and user-friendly way to control their information.
+You have the right to manage your data. SpendWise allows users to delete or download their app data directly from the application, providing a transparent and user-friendly way to control their information.
 
 ### Disclosure of Your Personal Data
 
 #### Law enforcement
 
-Under certain circumstances, the Company may be required to disclose Your Personal Data ( we collect Tally data ) if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+Under certain circumstances, the Company may be required to disclose information if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency). The application does not routinely collect personal data on our servers.
 
 #### Other legal requirements
 
-The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
+The Company may disclose information in the good faith belief that such action is necessary to:
 
 - Comply with a legal obligation
 - Protect and defend the rights or property of the Company
@@ -80,7 +80,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, You can contact us:
-
-
-- By email: zeroinsights@gmail.com
+If you have any questions about this Privacy Policy, You can contact the project maintainers via the repository listed in the application settings.
